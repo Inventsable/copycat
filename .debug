@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionList>
+    <Extension Id="com.copycat.panel">
+        <HostList>
+            <Host Name="ILST" Port="2200" />
+            <Host Name="AEFT" Port="2201" />
+            <Host Name="PHXS" Port="2202" />
+            <Host Name="PPRO" Port="2203" />
+            <Host Name="IDSN" Port="2204" />
+            <Host Name="AUDT" Port="2205" />
+            <Host Name="FLPR" Port="2206" />
+        </HostList>
+    </Extension>
+</ExtensionList>
