@@ -22,8 +22,8 @@
     <Extension Id="com.copycat.panel">
       <DispatchInfo>
         <Resources>
-          <MainPath>./public/index-dev.html</MainPath>
-          <!-- <MainPath>./dist/index.html</MainPath> -->
+          <MainPath>./dist/index.html</MainPath>
+          <!-- <MainPath>./public/index-dev.html</MainPath> -->
           <CEFCommandLine>
             <Parameter>--enable-nodejs</Parameter>
             <Parameter>--mixed-context</Parameter>

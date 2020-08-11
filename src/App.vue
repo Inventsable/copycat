@@ -21,6 +21,7 @@
             <Button label="reset" pill outline secondary @click="reset" />
             <Button label="copy" pill outline @click="copyResult" />
           </Grid>
+          <Divider />
           <TextArea
             :rows="this.text.split('\r\n').length + 1"
             :resizeable="false"
@@ -64,19 +65,18 @@ export default {
       copy(this.result);
     },
     testDrop(evt) {
-      console.log(evt);
+      this.fileName = evt[0].name;
     },
     copyAction(evt) {
-      this.text = evt;
-      let temp = this.text.split("\r\n"),
+      // this.text = evt;
+      let temp = evt.split("\r\n"),
         copyString = "";
       temp.forEach((line, i) => {
         copyString += `"${line}"${i < temp.length - 1 ? " +\r\n" : ""}`;
       });
+      this.text = copyString;
       copy(copyString);
     },
   },
 };
 </script>
-
-<style></style>
